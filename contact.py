@@ -74,6 +74,7 @@ def start():
     print(' '*15,'3. Press e to add edit contact...')
     print(' '*15,'4. Press d to add delete contact...')
     print(' '*15,'5. Press g to add search contact...')
+    print(' '*15,'6. Press q to exit application...')
 
 if __name__ == "__main__":
     person = contacts()
@@ -93,6 +94,8 @@ if __name__ == "__main__":
             person.delete()
         elif choice in ['g','G']:
             person.searchContact()
+        elif choice in ['q', 'Q']:
+            exit()
         else:
             print('Invaild input!!!...')
         answer = input('Want to perform more operations y/n:\t')
